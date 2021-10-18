@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+  box-shadow: 0px 1px 35px 0px rgb(0 0 0 / 30%);
+  transition: all 0.3s linear 0s;
+  display: block;
+  background: #FFFFFF;
+  padding: 0.6rem;
+  margin-bottom: 1.3rem;
+
+  .card__header {
+    display: flex;
+    align-items: center;
+
+    .card__line {
+      flex: 0 0 0.7rem;
+      background-color: green;
+      color: white;
+      padding: 0.6rem;
+    }
+
+    .card__stop {
+      flex: 1 0 0;
+      text-align: center;
+    }
+  }
+
+  .card__time {
+    font-size: 2rem;
+    text-align: center;
+    &.future {
+      color: #888;
+    }
+  }
+
+  .card__extra {
+    font-size: 1rem;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .card__arrive {
+
+    }
+    .card__leave {
+
+    }
+  }
+}

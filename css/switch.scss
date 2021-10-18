@@ -1,0 +1,169 @@
+$status1color: #ee4f4f;
+$status2color: #40b754;
+$status1padding: 95px;
+$status2padding: 68px;
+
+.checkbox {
+  cursor: pointer;
+  width: 200px;
+  position: relative;
+
+  > input,
+  > div,
+  > label {
+    display: inline-block;
+    vertical-align: top;
+    //color: white;
+  }
+
+  > label > span.on {
+    color: $status2color;
+  }
+
+  > label > span.off {
+    color: $status1color;
+  }
+
+  > div {
+    --switch-width: 50px;
+    --switch-height: 22px;
+    width: var(--switch-width);
+    height: var(--switch-height);
+    border-radius: var(--switch-height);
+    transition: background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  input:checked ~ div {
+    transition: background-color 0.3s;
+  }
+
+  input:not(:checked) ~ div {
+    transition: background-color 0.3s 0.3s;
+  }
+
+  > div::before,
+  > div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: var(--switch-height);
+    height: var(--switch-height);
+    background-color: white;
+    border-radius: 50%;
+  }
+
+
+
+  > div::before {
+    left: 0;
+  }
+
+  > div::after {
+    right: 0;
+  }
+
+  input:checked ~ div::before {
+    transform: scale(0.8) translateY(80px);
+  }
+
+  input:checked ~ div::after {
+    transform: scale(0.8) translateY(0);
+  }
+
+  input:not(:checked) ~ div::before {
+    transform: scale(0.8) translateY(0px);
+  }
+
+  input:not(:checked) ~ div::after {
+    transform: scale(0.8) translateY(-50px);
+  }
+
+  input:not(:checked) ~ div {
+    background-color: lightgray;
+  }
+
+  input:checked ~ div {
+    background-color: $status2color;
+  }
+
+  input:not(:checked) ~ div {
+    background-color: $status1color;
+  }
+
+  > input {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: 0;
+    height: 100%;
+    z-index: 19;
+  }
+
+  > label {
+    position: relative;
+    padding-left: $status1padding;
+    transition: padding-left 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  input:checked ~ label {
+    padding-left: $status2padding;
+  }
+
+  > label > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  > label > span.on {
+    transform: translateY(0px);
+  }
+
+  > label > span.off {
+    transform: translateY(1000px);
+  }
+
+  input:checked ~ div::before,
+  input:checked ~ div::after,
+  input:checked ~ label > span {
+    transition: transform 0.3s 0s;
+  }
+
+  input:not(:checked) ~ div::before,
+  input:not(:checked) ~ div::after,
+  input:not(:checked) ~ label > span {
+    transition: transform 0.3s 0.3s;
+  }
+
+  input:checked ~ label > span.on {
+    transform: translateY(0px);
+  }
+
+  input:checked ~ label > span.off {
+    transform: translateY(20px);
+  }
+
+  input:not(:checked) ~ label > span.on {
+    transform: translateY(-1000px);
+  }
+
+  input:not(:checked) ~ label > span.off {
+    transform: translateY(0px);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .checkbox > label {
+    color: #000;
+  }
+}
