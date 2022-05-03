@@ -20,7 +20,8 @@
     "offset": {
       "611": 20,
       "612": 12,
-      "611A": 14
+      "611A": 14,
+      "613": 0
     },
     "timetable": [
       { "bus": "611","stop": "8413", "hour": 6, "minute": 10 },
@@ -68,14 +69,26 @@
       { "bus": "611A","stop": "13147", "hour": 9, "minute": 30 },
       { "bus": "611A","stop": "13147", "hour": 10, "minute": 0 },
       { "bus": "611A","stop": "13147", "hour": 10, "minute": 40 },
-      { "bus": "611A","stop": "13147", "hour": 11, "minute": 5 }
+      { "bus": "611A","stop": "13147", "hour": 11, "minute": 5 },
+
+      { "bus": "613","stop": "13147", "hour": 6, "minute": 20 },
+      { "bus": "613","stop": "13147", "hour": 6, "minute": 40 },
+      { "bus": "613","stop": "13147", "hour": 7, "minute": 5 },
+      { "bus": "613","stop": "13147", "hour": 7, "minute": 30 },
+      { "bus": "613","stop": "13147", "hour": 8, "minute": 0 },
+      { "bus": "613","stop": "13147", "hour": 8, "minute": 25 },
+      { "bus": "613","stop": "13147", "hour": 8, "minute": 50 },
+      { "bus": "613","stop": "13147", "hour": 9, "minute": 15 },
+      { "bus": "613","stop": "13147", "hour": 10, "minute": 15 },
+      { "bus": "613","stop": "13147", "hour": 11, "minute": 30 }
     ]
   },
   "from": {
     "offset": {
       "611": 0,
       "612": 0,
-      "611A": 0
+      "611A": 0,
+      "613": 0
     },
     "timetable": [
       { "bus": "611","stop": "17480", "hour": 14, "minute": 50 },
@@ -98,23 +111,25 @@
       { "bus": "611","stop": "17480", "hour": 23, "minute": 15 },
       { "bus": "611","stop": "17480", "hour": 23, "minute": 45 },
 
-      { "bus": "612","stop": "17480", "hour": 14, "minute": 40 },
-      { "bus": "612","stop": "17480", "hour": 15, "minute": 15 },
-      { "bus": "612","stop": "17480", "hour": 15, "minute": 45 },
-      { "bus": "612","stop": "17480", "hour": 16, "minute": 15 },
-      { "bus": "612","stop": "17480", "hour": 16, "minute": 40 },
-      { "bus": "612","stop": "17480", "hour": 17, "minute": 5 },
-      { "bus": "612","stop": "17480", "hour": 17, "minute": 40 },
-      { "bus": "612","stop": "17480", "hour": 18, "minute": 10 },
-      { "bus": "612","stop": "17480", "hour": 18, "minute": 35 },
-      { "bus": "612","stop": "17480", "hour": 19, "minute": 10 },
-      { "bus": "612","stop": "17480", "hour": 19, "minute": 45 },
-      { "bus": "612","stop": "17480", "hour": 20, "minute": 15 },
+      { "bus": "612","stop": "17480", "hour": 14, "minute": 25 },
+      { "bus": "612","stop": "17480", "hour": 14, "minute": 55 },
+      { "bus": "612","stop": "17480", "hour": 15, "minute": 25 },
+      { "bus": "612","stop": "17480", "hour": 15, "minute": 55 },
+      { "bus": "612","stop": "17480", "hour": 16, "minute": 30 },
+      { "bus": "612","stop": "17480", "hour": 17, "minute": 0 },
+      { "bus": "612","stop": "17480", "hour": 17, "minute": 25 },
+      { "bus": "612","stop": "17480", "hour": 17, "minute": 50 },
+      { "bus": "612","stop": "17480", "hour": 18, "minute": 25 },
+      { "bus": "612","stop": "17480", "hour": 19, "minute": 0 },
+      { "bus": "612","stop": "17480", "hour": 19, "minute": 25 },
+      { "bus": "612","stop": "17480", "hour": 19, "minute": 40 },
+      { "bus": "612","stop": "17480", "hour": 20, "minute": 0 },
       { "bus": "612","stop": "17480", "hour": 20, "minute": 30 },
       { "bus": "612","stop": "17480", "hour": 21, "minute": 0 },
-      { "bus": "612","stop": "17480", "hour": 22, "minute": 0 },
-      { "bus": "612","stop": "17480", "hour": 22, "minute": 45 },
-      { "bus": "612","stop": "17480", "hour": 23, "minute": 59 },
+      { "bus": "612","stop": "17480", "hour": 21, "minute": 10 },
+      { "bus": "612","stop": "17480", "hour": 21, "minute": 40 },
+      { "bus": "612","stop": "17480", "hour": 22, "minute": 40 },
+      { "bus": "612","stop": "17480", "hour": 23, "minute": 25 },
 
       { "bus": "611A","stop": "17480", "hour": 14, "minute": 0 },
       { "bus": "611A","stop": "17480", "hour": 14, "minute": 30 },
@@ -126,7 +141,22 @@
       { "bus": "611A","stop": "17480", "hour": 19, "minute": 5 },
       { "bus": "611A","stop": "17480", "hour": 19, "minute": 30 },
       { "bus": "611A","stop": "17480", "hour": 20, "minute": 25 },
-      { "bus": "611A","stop": "17480", "hour": 22, "minute": 30 }
+      { "bus": "611A","stop": "17480", "hour": 22, "minute": 30 },
+
+      { "bus": "613","stop": "17480", "hour": 14, "minute": 0 },
+      { "bus": "613","stop": "17480", "hour": 14, "minute": 25 },
+      { "bus": "613","stop": "17480", "hour": 14, "minute": 40 },
+      { "bus": "613","stop": "17480", "hour": 15, "minute": 10 },
+      { "bus": "613","stop": "17480", "hour": 15, "minute": 20 },
+      { "bus": "613","stop": "17480", "hour": 15, "minute": 35 },
+      { "bus": "613","stop": "17480", "hour": 16, "minute": 45 },
+      { "bus": "613","stop": "17480", "hour": 17, "minute": 55 },
+      { "bus": "613","stop": "17480", "hour": 18, "minute": 5 },
+      { "bus": "613","stop": "17480", "hour": 18, "minute": 40 },
+      { "bus": "613","stop": "17480", "hour": 19, "minute": 5 },
+      { "bus": "613","stop": "17480", "hour": 20, "minute": 10 },
+      { "bus": "613","stop": "17480", "hour": 20, "minute": 50 },
+      { "bus": "613","stop": "17480", "hour": 22, "minute": 0 }
     ]
   }
 }
